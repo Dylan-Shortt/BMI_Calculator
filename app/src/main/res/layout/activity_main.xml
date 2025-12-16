@@ -1,19 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingBottom="40dp"
+    android:background="@drawable/bmibgk"
     tools:context=".MainActivity">
 
+    //------------------------------------------------------------------------------------------------------------------//
+    // create card view for BMI
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        //-------------------------------------------------//
+        // Create linear layout for weight
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            //-------------------------------------------------//
+            // create layout for weight text and value
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="16dp">
+                //-------------------------------------------------//
+
+                //-------------------------------------------------//
+                // create title for Weight
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WeighText"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Weight"/>
+                //-------------------------------------------------//
+
+                //-------------------------------------------------//
+                // create input for weight
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/weightEdit"
+                    android:textSize="26sp"
+                    android:hint="kg"
+                    android:layout_marginEnd="6dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/navy"/>
+                //-------------------------------------------------//
+            </LinearLayout>
+            //-------------------------------------------------//
+
+            //-------------------------------------------------//
+            // layout for height text and value
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="16dp">
+                //-------------------------------------------------//
+
+                //-------------------------------------------------//
+                // This is the title for the height input
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/heightText"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Height"/>
+                //-------------------------------------------------//
+
+                //-------------------------------------------------//
+                // This is the input for the height value
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/heightEdit"
+                    android:textSize="26sp"
+                    android:hint="cm"
+                    android:layout_marginEnd="6dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/navy"/>
+                //-------------------------------------------------//
+            </LinearLayout>
+            //-------------------------------------------------//
+        </LinearLayout>
+        //-------------------------------------------------//
+
+    </androidx.cardview.widget.CardView>
+    //------------------------------------------------------------------------------------------------------------------//
+
+    //-------------------------------------------------//
+    // create button to submit values
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateBtn"
+        android:layout_marginTop="20dp"
+        android:text="Calculate BMI"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+    //-------------------------------------------------//
+
+    //-------------------------------------------------//
+    // create text view to show resulting value
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/resultText"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/navy"
+        android:text="Result"/>
+    //-------------------------------------------------//
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+//-----------------------------------...ooo000 END OF FILE 000ooo...-----------------------------------//
+</LinearLayout>
