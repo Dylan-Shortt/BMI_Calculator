@@ -52,7 +52,7 @@ Invalid inputs will display an error message prompting you to enter valid values
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
+Dylan Shortt - dylan.c.shortt@outlook.com
 
 Project Link: [https://github.com/Dylan-Shortt/BMI_Calculator(https://github.com/Dylan-Shortt/BMI_Calculator)
 
