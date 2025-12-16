@@ -21,7 +21,7 @@ A simple and intuitive Body Mass Index (BMI) calculator for Android that helps u
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/bmi-calculator.git
+git clone https://github.com/Dylan-Shortt/BMI_Calculator.git
 ```
 
 2. Open the project in Android Studio
@@ -31,7 +31,7 @@ git clone https://github.com/yourusername/bmi-calculator.git
 ## Usage
 
 1. Enter your weight (in kilograms)
-2. Enter your height (in centimeters or meters)
+2. Enter your height (in centimeters)
 3. Tap the calculate button
 4. View your BMI result and category
 
@@ -50,27 +50,12 @@ Invalid inputs will display an error message prompting you to enter valid values
 - **Android Studio** - Development environment
 - **Android SDK** - Android platform libraries
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
 
-Project Link: [https://github.com/yourusername/bmi-calculator](https://github.com/yourusername/bmi-calculator)
+Project Link: [https://github.com/Dylan-Shortt/BMI_Calculator(https://github.com/Dylan-Shortt/BMI_Calculator)
 
 ## Acknowledgments
 
 - Thanks to the Android development community
-- Inspired by health and fitness applications
